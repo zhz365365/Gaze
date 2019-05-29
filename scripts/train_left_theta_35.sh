@@ -1,0 +1,17 @@
+/usr/bin/python3 ../src/train.py \
+--GPU='2' \
+--data_type='LOPO_MPIIGaze' \
+--net_name='vgg_4' \
+--image_height=144 \
+--image_width=240 \
+--trainable='1' \
+--batch_size=256 \
+--server=35 \
+--build_pyramid=0 \
+--build_pyramid_layers=1 \
+--epoch=200 \
+--reduce_mean=0 \
+--leave_one=14 \
+--net_head='stem' \
+--lr_boundaries='5' \
+--lr_values='0.0001,0.00001'

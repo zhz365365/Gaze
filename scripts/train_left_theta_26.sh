@@ -1,0 +1,16 @@
+/usr/bin/python3 ../src/train.py \
+--GPU='0' \
+--data_type='LOPO_MPIIGaze' \
+--net_name='hourglasses' \
+--trainable='1' \
+--eyeball='left' \
+--batch_size=32 \
+--server=26 \
+--build_pyramid=1 \
+--build_pyramid_layers=3 \
+--epoch=400 \
+--reduce_mean=0 \
+--leave_one=14 \
+--net_head='stem' \
+--lr_boundaries='80' \
+--lr_values='0.00001,0.000001'
